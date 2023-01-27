@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    box-sizing: border-box;
+}
+body {
+    height: ;
+    font-size: 16px;
+    font-family: Arial;
+}
+.container {
+    height: 100vh;
+    display: flex;
+}
+.img-col {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    background-color: rgb(238,171,19);
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 10em;
+}
+.form-col {
+    height: 100%;
+    padding: 1.5em 0;
+    flex-grow: 1;
+    background-color: #e5e5d4;
+}
+
+header {
+	padding: 0 3em;
+}
+h2 {
+    margin-bottom: .5em;
+    font-size: 1.25rem;
+}
+form {
+    display: grid;
+    grid-gap: .5em .5em;
+    grid-template-columns: repeat(2 , 1fr);
+    text-transform: capitalize;
+}
+.form-container {
+    background-color: #FFF;
+        padding: 1em 3em;
+    margin: .5em 0;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.7) ;
+    width: 100%;
+}
+form label{
+    font-weight: 700;
+}
+form input {
+    padding: .5em .5em;
+    width: 100%;
+}
+form input::placeholder {
+    font-weight: 500;
+    text-transform: capitalize
+}
+form .password::after {
+    content: "* passwords do not match";
+    color: red;
+    text-transform: lowercase;
+}
+.red-outline {
+    border-color: red;
+}
+
+.form-btns {
+    display: block;
+    padding: .5em 3em;
+}
+
+.form-btns button {
+    border: 0;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding: .7em 1.5em;
+    margin-bottom: .5em;
+    background-color: rgb(238,171,19);
+}
+
+
+
